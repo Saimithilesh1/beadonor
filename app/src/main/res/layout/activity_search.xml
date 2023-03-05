@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/log" />
+
+    <TextView
+        android:id="@+id/pagetitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="-83dp"
+        android:fontFamily="sans-serif"
+        android:padding="12dp"
+        android:layout_marginLeft="100dp"
+        android:paddingLeft="20dp"
+        android:text="Be A DONOR"
+        android:textColor="#C00B12"
+        android:textSize="74px"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/baseline_account_circle_24_5"
+        android:layout_marginLeft="100dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pagetitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id = "@+id/container1"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_below = "@+id/pagetitle">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:drawableRight="@drawable/baseline_account_circle_24_5" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="Donor Name"
+            android:textSize="80px" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_height="70dp"
+            android:textSize="90px"
+            android:drawableRight="@drawable/baseline_phone_enabled_24_5" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
